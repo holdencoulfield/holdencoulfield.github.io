@@ -32,7 +32,7 @@ h2 {
     text-align: center;
     font-weight: 300;
     font-size: 2em;
-    color: #3080D7;
+    color: #3F8ADC;
 }
 
 h3 {
@@ -79,7 +79,7 @@ legend {
     margin: 0 0 40px 0;
     font-weight: 700;
     font-size: 1.2em;
-    color: #3080D7;
+    color: #3F8ADC;
 }
 
 label {
@@ -166,7 +166,7 @@ input[type="checkbox"] + label span {
 }
 
 input[type="checkbox"]:checked + label span {
-    background: #53BBB4 url(../img/check-mark.svg) no-repeat center;
+    background: #3F8ADC url(../img/check-mark.svg) no-repeat center;
     background-size: 60%;
 }
 
@@ -182,7 +182,7 @@ input[type="radio"] + label span {
 }
 
 input[type="radio"]:checked + label span {
-    background: #53BBB4 url(../img/radio-circle.svg) no-repeat center;
+    background: #3F8ADC url(../img/radio-circle.svg) no-repeat center;
     background-size: 40%;
 
 }
