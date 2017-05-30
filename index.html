@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>The code review</h1>
+        </header>
+        <section>
+            <div class="container">
+                <h2>Signup for our newsletter</h2>
+                <h3>Get the latest news on how your code is doing right in your inbox</h3>
+                <form action="index.html" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+
+                        <label class="floated" for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name" placeholder="Required" required>
+
+                        <label class="floated" for="email">Email Address</label>
+                        <input type="email" id="email" name="user_email" placeholder="Required" required>
+
+                        <label class="floated" for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="user_phone_number">
+
+                        <label class="floated" for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address">
+
+                        <label class="floated" for="city">City</label>
+                        <input type="text" id="city" name="user_phone_number">
+
+                        <label class="floated" for="state">State</label>
+                        <select id="state" name="user_state" placeholder="Choose State">
+                            <option value="not_chosen" class="default-option" selected>Choose State</option>
+                            <option value="new_york">New York</option>
+                            <option value="california">California</option>
+                            <option value="nevada">Nevada</option>
+                        </select>
+
+                        <label class="floated" for="zip_code">Zip Code</label>
+                        <input type="text" id="zip_code" name="zip_code">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Newsletter</legend>
+
+                        <label>Select the newsletters you'd like to receive</label>
+                        <input type="checkbox" id="html_news" name="news_topic" value="html_news">
+                        <label for="html_news"><span></span>HTML News</label><br>
+                        <input type="checkbox" id="css_news" name="news_topic" value="css_news">
+                        <label for="css_news"><span></span>CSS News</label><br>
+                        <input type="checkbox" id="javascript_news" name="news_topic" value="javascript_news">
+                        <label for="javascript_news" class="add-margin"><span></span>Javascript News</label>
+
+                        <label>Newsletter format</label>
+                        <input type="radio" id="html_format" name="newsletter_format" value="html_format">
+                        <label for="html_format"><span></span>HTML</label><br>
+                        <input type="radio" id="plain_text_format" name="newsletter_format" value="plain_text_format">
+                        <label for="plain_text_format" class="add-margin"><span></span>Plain text</label>
+
+                        <label for="message">Other topics you would like to hear about</label>
+                        <textarea id="message" name="user_message"></textarea>
+
+                        <button type="submit">Sign Up</button>
+
+                        <span class="copyright">Copyright The Code Preview</span>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
