@@ -1,272 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600');
+
+.search {
+    display: block;
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 20px;
+    height: 80px;
+    background: #036CE4;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.search-icon {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+
+#search {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    font-size: 2em;
+    color: white;
+    width: 80%;
+    border: none;
+    background: transparent;
+}
 
 * {
-    box-sizing: border-box;
     outline: none;
 }
 
-
-/**********************************
---------------  MAIN  -------------
-***********************************/
-
-body {
-    font-family: 'Open Sans', sans-serif;
+#search::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
 }
 
-header {
-    background-color: #2D3944;
-    padding: 20px 0;
-    text-align: center;
-}
-
-h1 {
-    color: white;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.4em;
-}
-
-h2 {
-    margin: 0 0 20px 0;
-    text-align: center;
-    font-weight: 300;
-    font-size: 2em;
-    color: #3F8ADC;
-}
-
-h3 {
-    margin: 0 0 40px 0;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1em;
-    color: grey;
-}
-
-section {
-    padding: 40px 0;
+#search:focus::-webkit-input-placeholder {
+    color: transparent;
 }
 
 .container {
     margin: auto;
-    width: 90%;
+    max-width: 980px;
+    text-align: center;
 }
 
-
-
-/**********************************
---------------  FORM  -------------
-***********************************/
-
-form {
-    border-top: 2px solid #ddd;
-    padding: 0;
+.list {
+    margin-top: 130px;
+    margin-bottom: 50px;
 }
 
-fieldset {
-    border: none;
-    margin-top: 40px;
-    padding: 0;
-}
-
-fieldset:first-child {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 20px;
-}
-
-legend {
-    display: block;
-    margin: 0 0 40px 0;
-    font-weight: 700;
-    font-size: 1.2em;
-    color: #3F8ADC;
-}
-
-label {
-    display: block;
-    color: #333;
-    font-weight: 400;
-    font-size: 1em;
+.pic {
+    float: left;
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    margin: 0 10px 20px 5px;
     margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-textarea,
-select {
-    display: block;
-    width: 100%;
-    border-radius: 6px;
-    background-color: #EFF0F1;
-    border: none;
-    text-align: right;
-    height: 50px;
-    padding: 0 15px;
-    margin-bottom: 20px;
+.pic:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.image {
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+
+/*-----Adding thumbnails------*/
+
+.hay-bales {
+    background-image: url(../img/01.jpg);
+}
+
+.lake {
+    background-image: url(../img/02.jpg);
+}
+
+.canyon {
+    background-image: url(../img/03.jpg);
+}
+
+.iceberg {
+    background-image: url(../img/04.jpg);
+}
+
+.desert {
+    background-image: url(../img/05.jpg);
+}
+
+.fall {
+    background-image: url(../img/06.jpg);
+}
+
+.plantation {
+    background-image: url(../img/07.jpg);
+}
+
+.dunes {
+    background-image: url(../img/08.jpg);
+}
+
+.countryside-lane {
+    background-image: url(../img/09.jpg);
+}
+
+.sunset {
+    background-image: url(../img/10.jpg);
+}
+
+.cave {
+    background-image: url(../img/11.jpg);
+}
+
+.bluebells {
+    background-image: url(../img/12.jpg);
+}
+
+.no-results {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: .9em;
-}
-
-#zip_code {
-    width: 40%;
-}
-
-select {
-    font-size: 1em;
-}
-
-textarea {
-    padding-top: 15px;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    background: #EAF2F9;
-    text-align: left;
-    font-size: 1em;
-    -webkit-transition: 0.4s;
-}
-
-input:not(:placeholder-shown),
-textarea:not(:placeholder-shown) {
-    text-align: left;
-    font-size: 1em;
-}
-
-
-option[selected] {
-    color: grey;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    display: none;
-    margin: 0;
-    padding: 0;
-}
-
-input[type="checkbox"] + label span {
-    display: inline-block;
-    border-radius: 6px;
-    margin: -2px 10px 0 0;
-    vertical-align: middle;
-    width: 19px;
-    height: 19px;
-    background: #EFF0F1;
-    cursor: pointer;
-}
-
-input[type="checkbox"]:checked + label span {
-    background: #3F8ADC url(../img/check-mark.svg) no-repeat center;
-    background-size: 60%;
-}
-
-input[type="radio"] + label span {
-    display: inline-block;
-    border-radius: 50%;
-    margin: -2px 10px 0 0;
-    vertical-align: middle;
-    width: 19px;
-    height: 19px;
-    background: #EFF0F1;
-    cursor: pointer;
-}
-
-input[type="radio"]:checked + label span {
-    background: #3F8ADC url(../img/radio-circle.svg) no-repeat center;
-    background-size: 40%;
-
-}
-
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-    display: inline-block;
-    /*margin-left: 10px;*/
-    font-weight: 300;
-}
-
-textarea {
-    height: 100px;
-    margin-bottom: 30px;
-}
-
-button {
-    display: block;
-    width: 100%;
-    height: 60px;
-    background-color: #3F8ADC;
-    border: none;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 1.4em;
-    font-weight: 600;
-    margin-bottom: 20px;
-    -webkit-transition: 0.5s;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #5AA6F9;
-}
-
-.copyright {
-    display: block;
+    font-size: 2em;
     text-align: center;
-    font-size: .8em;
-    font-weight: 400;
-    color: grey;
+    border-radius: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.no-results:hover {
+    transform: none;
 }
 
 
-/**********************************
-------------  DRY CSS  ------------
-***********************************/
+/*--- Clearfix ----*/
 
-.add-margin {
-    margin-bottom: 30px;
-}
-
-
-@media screen and (min-width: 760px) {
-
-    .container {
-        width: 60%;
-    }
-
-    .floated {
-        display: inline-block;
-        float: left;
-        clear: both;
-        width: 30%;
-        margin-top: 15px;
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="date"],
-    input[type="datetime"],
-    input[type="email"],
-    input[type="number"],
-    input[type="search"],
-    input[type="tel"],
-    input[type="time"],
-    input[type="url"],
-    select {
-        display: inline-block;
-        float: right;
-        width: 70%;
-    }
-
-    #zip_code {
-        float: left;
-    }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
